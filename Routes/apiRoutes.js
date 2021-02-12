@@ -1,27 +1,27 @@
-var path = require("path");
+const path = require("path");
 
-var fs = require("fs");
+const fs = require("fs");
 
-var db = require("../Develop/db/db.json");
+const db = require("../Develop/db/db.json");
 
-var notes = [];
+const notes = [];
 
-module.exports = function(app) {
+module.exports = (app) => {
 
-    app.get("/api/notes", function(req, res) {
-        fs.readFile(path.join(__dirname, "../Develop/db/db.json"), "utf8", function(error, data) {
+    app.get("/api/notes", (req, res) => {
+        fs.readFile(path.join(__dirname, "../Develop/db/db.json"), "utf8", (error, data) => {
             res.json(data)
         });
     });
 
-    app.get("/api/notes", function(req, res) {
-        fs.readFile(path.join(__dirname, "../Develop/db/db.json"), "utf8", function(error, data) {
+    app.get("/api/notes", (req, res) => {
+        fs.readFile(path.join(__dirname, "../Develop/db/db.json"), "utf8", (error, data) => {
             res.json(data)
         });
 
 
-    app.delete("/api/notes/:id", function(req, res) {
-        fs.readFile(path.join(__dirname, "../Develop/db/db.json"), "utf8", function(error, data) {
+    app.delete("/api/notes/:id", (req, res) => {
+        fs.readFile(path.join(__dirname, "../Develop/db/db.json"), "utf8", (error, data) => {
             //check syntax of notes and console log
             
             notes = JSON.parse(data);
