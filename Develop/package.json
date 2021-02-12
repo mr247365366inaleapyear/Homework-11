@@ -1,14 +1,23 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "app that takes and saves notes for you",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Waleed McLean",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mr247365366inaleapyear/homework-11.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mr247365366inaleapyear/homework-11/issues"
+  },
+  "homepage": "https://github.com/mr247365366inaleapyear/homework-11#readme"
 }
